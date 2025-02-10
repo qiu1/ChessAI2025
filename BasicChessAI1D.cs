@@ -14,7 +14,7 @@ namespace ChessEngine
             random = new Random();
         }
 
-        public Ply? GetPly(ChessBoard1D board, PieceColor turn)
+        public Ply? GetPly(ChessBoard board, PieceColor turn)
         {
             // Get a list of legal plies.
             List<Ply> plies = board.GenerateLegalPlies();
