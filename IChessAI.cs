@@ -1,4 +1,4 @@
-namespace ChessEngine1D
+namespace ChessEngine
 {
     /// <summary>
     /// Interface for a chess AI that works with a 1-D board and half-moves (plies).
