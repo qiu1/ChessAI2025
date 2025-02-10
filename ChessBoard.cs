@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ChessEngine1D
+namespace ChessEngine
 {
     public class ChessBoard
     {
