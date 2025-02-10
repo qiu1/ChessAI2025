@@ -24,7 +24,7 @@ namespace ChessEngine
         /// </summary>
         public Stack<Ply> MoveHistory { get; private set; }
 
-        public ChessBoard1D()
+        public ChessBoard()
         {
             Board = new char[BOARD_SIZE];
             MoveHistory = new Stack<Ply>(MAX_PLY);
