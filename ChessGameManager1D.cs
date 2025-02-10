@@ -2,17 +2,17 @@ using System;
 
 namespace ChessEngine
 {
-    public class ChessGameManager1D
+    public class ChessGameManager
     {
-        private IChessAI1D whiteAI;
-        private IChessAI1D blackAI;
-        private ChessBoard1D board;
+        private IChessAI whiteAI;
+        private IChessAI blackAI;
+        private ChessBoard board;
 
-        public ChessGameManager1D(IChessAI1D white, IChessAI1D black)
+        public ChessGameManager1D(IChessAI white, IChessAI black)
         {
             whiteAI = white;
             blackAI = black;
-            board = new ChessBoard1D();
+            board = new ChessBoard();
         }
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace ChessEngine
             while (true)
             {
                 board.PrintBoard();
-                IChessAI1D currentAI = (board.Turn == PieceColor.White) ? whiteAI : blackAI;
+                IChessAI currentAI = (board.Turn == PieceColor.White) ? whiteAI : blackAI;
                 Console.WriteLine($"It is {board.Turn}'s turn ({currentAI.Name}).");
 
                 // Use a clone of the board for the AI so that its internal simulation does not affect the actual board.
@@ -52,9 +52,9 @@ namespace ChessEngine
         /*
         public static void Main(string[] args)
         {
-            IChessAI1D white = new BasicChessAI1D("WhiteBasic1D");
-            IChessAI1D black = new BasicChessAI1D("BlackBasic1D");
-            ChessGameManager1D game = new ChessGameManager1D(white, black);
+            IChessAI white = new BasicChessAI("WhiteBasic1D");
+            IChessAI black = new BasicChessAI("BlackBasic1D");
+            ChessGameManager game = new ChessGameManager(white, black);
             game.PlayGame();
         }
         */
