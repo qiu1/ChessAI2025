@@ -52,9 +52,9 @@ namespace ChessEngine
         /*
         public static void Main(string[] args)
         {
-            IChessAI white = new BasicChessAI("WhiteBasic1D");
-            IChessAI black = new BasicChessAI("BlackBasic1D");
-            ChessGameManager game = new ChessGameManager(white, black);
+            IChessAI white = new BasicChessAI1D("WhiteBasic1D");
+            IChessAI black = new BasicChessAI1D("BlackBasic1D");
+            ChessGameManager1D game = new ChessGameManager1D(white, black);
             game.PlayGame();
         }
         */
