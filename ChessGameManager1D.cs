@@ -2,7 +2,7 @@ using System;
 
 namespace ChessEngine
 {
-    public class ChessGameManager
+    public class ChessGameManager1D
     {
         private IChessAI whiteAI;
         private IChessAI blackAI;
